@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="shortcut icon" href="{{  url_for('static', filename='images/logo.jpg')  }}" type="image/x-icon">
+	<title>Поиск товаров | CuberTea</title>
+</head>
+<body>
+	<header>
+		<h1 class="header__h1"><a href="{{ url_for('main') }}">CuberTea</a></h1>
+		<h1 class="header__h1"><a href="{{ url_for('about') }}">Про нас</a></h1>
+		<h1 class="header__h1"><a href="{{ url_for('contacts') }}">Контакты</a></h1>
+		<h1 class="header__h1"><a href="https://www.donationalerts.com/r/deyman_qr" target="_blank">Поддержать нас</a></h1>
+	</header>
+	<main>
+		<nav class="nav">
+			<a class="nav__a" href="{{ url_for('generator') }}">Scramble генератор</a>
+			<a class="nav__a" href="{{ url_for('oll') }}">OLL алгоритмы</a>
+			<a class="nav__a" href="{{ url_for('pll') }}">PLL алгоритмы</a>
+			<a class="nav__a" href="{{ url_for('shop') }}">Поиск товаров</a>
+		</nav>
+		<div class="content">
+			{% if data %}
+				<table>
+					<caption><h1 class="text__h1">Товары</h1></caption>
+					<tbody>
+					<tr>
+						<th class="shop__table__el"><p class="td__p">Название</p></th>
+						<th class="shop__table__el"><p class="td__p">Статус</p></th>
+						<th class="shop__table__el"><p class="td__p">Цена</p></th>
+					</tr>
+				{% for product in data %}
+						<tr>
+							<td class="shop__table__el"><a href={{ product['url'] }} class="td__p" target="_blank">{{ product['name'] }}</a></td>
+							<td class="shop__table__el"><p class="td__p">{{ product['status'] }}</p></td>
+							<td class="shop__table__el"><p class="td__p">{{ product['price'] }}</p></td>
+						</tr>
+				{% endfor %}
+					</tbody>
+				</table>
+			{% endif %}
+			{% if message %}
+				<h1 class="text__h1">{{ message }}</h1>
+			{% endif %}
+			<form method="post">
+				<p class="main__text__p">Укажите название товара:<br>
+				<input class="main__text__p" type="text" name="product" placeholder="Название" style="margin-top:1%;"></p>
+				<input class="main__text__p" type="submit" value="Подтвердить">
+			</form>
+		</div>
+	</main>
+</body>
+</html>

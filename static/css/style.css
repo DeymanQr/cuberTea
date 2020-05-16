@@ -1,0 +1,121 @@
+body {
+	margin: 0;
+	font-family: monospace;
+	min-height: 100vh;
+}
+
+header {
+	position: sticky;
+	display: flex;
+	padding:0 1%;
+	justify-content: space-between;
+	vertical-align: middle;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.header__h1{cursor: pointer;}
+
+main {
+	display: flex;
+}
+
+.nav {
+	position: static;
+	width: 14%;
+	text-align: center;
+	font-size: 1.2vw;
+	font-weight: bold;
+}
+
+.nav__a {
+	display: block;
+	margin: 45% 1%;
+}
+
+.content {
+	min-height: 100vh;
+	position: static;
+	padding: 1%;
+	width: 86%;
+	height: 100%;
+}
+
+.ll {
+	display: flex;
+}
+
+header, .nav, .content{
+	background: #00e8aa;
+	border: solid #555;
+	border-width: 1%;
+}
+
+.text__h1{
+	text-align: center;
+	margin-top: 1%;
+	font-size: 1.8vw;
+}
+
+.text__p, .main__text__p{
+	font-size: 1.2vw;
+}
+
+.main__text__p:before {
+	content: "";
+	border-left: .1vw solid #c72100;
+	padding-right: 1%;
+}
+
+a, b, p, ol, ul {
+	text-decoration: none;
+	color: #000;
+}
+
+.text__a {
+	text-decoration: underline;
+}
+
+h1 {
+	 font-size: 2vw;
+}
+
+a {
+	transition: color .2s ease 0s;
+}
+
+a:hover {
+	color: #ff3926;
+}
+
+.ll__table {
+	text-align: center;
+}
+
+.shop__table__el {
+    padding: 5em;
+}
+
+.td__p {
+	font-weight: bold;
+	font-size: 1.1vw;
+}
+
+td.shop, th.shop {
+    margin: 1%;
+}
+
+.table__img {
+	width: 65%;
+}
+
+.up {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border: .1vw solid #000;
+	border-radius: 30%;
+	padding: .5%;
+	margin: .5%;
+	font-size: 1.8vw;
+}

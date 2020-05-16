@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="shortcut icon" href="{{  url_for('static', filename='images/logo.jpg')  }}" type="image/x-icon">
+	<title>PLL алгоритмы | CuberTea</title>
+</head>
+<body>
+	<a name="up"></a>
+	<header>
+		<h1 class="header__h1"><a href="{{ url_for('main') }}">CuberTea</a></h1>
+		<h1 class="header__h1"><a href="{{ url_for('about') }}">Про нас</a></h1>
+		<h1 class="header__h1"><a href="{{ url_for('contacts') }}">Контакты</a></h1>
+		<h1 class="header__h1"><a href="https://www.donationalerts.com/r/deyman_qr" target="_blank">Поддержать нас</a></h1>
+	</header>
+	<main>
+		<nav class="nav">
+			<a class="nav__a" href="{{ url_for('generator') }}">Scramble генератор</a>
+			<a class="nav__a" href="{{ url_for('oll') }}">OLL алгоритмы</a>
+			<a class="nav__a" href="{{ url_for('pll') }}">PLL алгоритмы</a>
+			<a class="nav__a" href="{{ url_for('shop') }}">Поиск товаров</a>
+		</nav>
+		<div class="content ll">
+			<table class="ll__table">
+				<tbody>
+					<tr><td align="center">
+						<h1>Треугольник углов №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/aperm1.png') }}">
+					</td><td><p class="td__p">Lw' U R' D2 R U' R' D2 R2</p></td></tr>
+					<tr><td align="center">
+						<h1>Саночки</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/zperm.png') }}">
+					</td><td><p class="td__p">U' M' U M2 U M2 U M' U2 M2</p></td></tr>
+					<tr><td align="center">
+						<h1>Треугольник углов №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/uperm1.png') }}">
+					</td><td><p class="td__p">R U' R U R U R U' R' U' R2</p></td></tr>
+					<tr><td align="center">
+						<h1>Лямбда №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/jperm1.png') }}">
+					</td><td><p class="td__p">R U R' F' R U R' U' R' F R2 U' R' U'</p></td></tr>
+					<tr><td align="center">
+						<h1>Семерка №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/rperm1.png') }}">
+					</td><td><p class="td__p">R' U2 R U2 R' F R U R' U' R' F' R2 U'</p></td></tr>
+					<tr><td align="center">
+						<h1>Буква Т</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/tperm.png') }}">
+					</td><td><p class="td__p">R U R' U' R' F R2 U' R' U' R U R' F'</p></td></tr>
+					<tr><td align="center">
+						<h1>Параллельный перенос</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/fperm.png') }}">
+					</td><td><p class="td__p">R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R</p></td></tr>
+					<tr><td align="center">
+						<h1>Буква X №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/nperm1.png') }}">
+					</td><td><p class="td__p">R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'</p></td></tr>
+					<tr><td align="center">
+						<h1>Восьмерка №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/gperm1.png') }}">
+					</td><td><p class="td__p">R2' F2 R U2 R U2' R' F R U R' U' R' F R2</p></td></tr>
+					<tr><td align="center">
+						<h1>Восьмерка №3</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/gperm3.png') }}">
+					</td><td><p class="td__p">R2 Uw R' U R' U' R Uw' R2 y' R' U R</p></td></tr>
+					<tr><td align="center">
+						<h1>Терминатор</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/eperm.png') }}">
+					</td><td><p class="td__p">x' R U' R' D R U R' D' R U R' D R U' R' D'</p></td></tr>
+				</tbody>
+			</table>
+			<table>
+				<tbody>
+					<tr><td align="center">
+						<h1>Треугольник углов №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/aperm2.png') }}">
+					</td><td><p class="td__p">x R2 D2 R U R' D2 R U' R</p></td></tr>
+					<tr><td align="center">
+						<h1>Крест сторон</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/hperm.png') }}">
+					</td><td><p class="td__p">M2 U' M2 U2 M2 U' M2</p></td></tr>
+					<tr><td align="center">
+						<h1>Треугольник сторон №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/uperm2.png') }}">
+					</td><td><p class="td__p">R2 U R U R' U' R' U' R' U R'</p></td></tr>
+					<tr><td align="center">
+						<h1>Лямбда №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/jperm2.png') }}">
+					</td><td><p class="td__p">U' R' U L' U2 R U' R' U2 R L</p></td></tr>
+					<tr><td align="center">
+						<h1>Семерка №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/rperm2.png') }}">
+					</td><td><p class="td__p">L U2 L' U2 L F' L' U' L U L F L2 U</p></td></tr>
+					<tr><td align="center">
+						<h1>Копье</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/yperm.png') }}">
+					</td><td><p class="td__p">F R U' R' U' R U R' F' R U R' U' R' F R F'</p></td></tr>
+					<tr><td align="center">
+						<h1>Летающая тарелка</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/vperm.png') }}">
+					</td><td><p class="td__p">R' U R' U' y R' F' R2 U' R' U R' F R F</p></td></tr>
+					<tr><td align="center">
+						<h1>Буква X №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/nperm2.png') }}">
+					</td><td><p class="td__p">R' U R U' R' F' U' F R U R' F R' F' R U' R</p></td></tr>
+					<tr><td align="center">
+						<h1>Восьмерка №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/gperm2.png') }}">
+					</td><td><p class="td__p">R2' F' R U R U' R' F' R U2' R' U2' R' F2 R2</p></td></tr>
+					<tr><td align="center">
+						<h1>Восьмерка №4</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/pll/gperm4.png') }}">
+					</td><td><p class="td__p">F' U' F R2 Uw R' U R U' R Uw' R2'</p></td></tr>
+				</tbody>
+			</table>
+			<a class="up" href="#up">Вверх</a>
+		</div>
+	</main>
+</body>
+</html>

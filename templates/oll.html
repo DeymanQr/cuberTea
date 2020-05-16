@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="shortcut icon" href="{{  url_for('static', filename='images/logo.jpg')  }}" type="image/x-icon">
+	<title>OLL алгоритмы | CuberTea</title>
+</head>
+<body>
+	<a name="up"></a>
+	<header>
+		<h1 class="header__h1"><a href="{{ url_for('main') }}">CuberTea</a></h1>
+		<h1 class="header__h1"><a href="{{ url_for('about') }}">Про нас</a></h1>
+		<h1 class="header__h1"><a href="{{ url_for('contacts') }}">Контакты</a></h1>
+		<h1 class="header__h1"><a href="https://www.donationalerts.com/r/deyman_qr" target="_blank">Поддержать нас</a></h1>
+	</header>
+	<main>
+		<nav class="nav">
+			<a class="nav__a" href="{{ url_for('generator') }}">Scramble генератор</a>
+			<a class="nav__a" href="{{ url_for('oll') }}">OLL алгоритмы</a>
+			<a class="nav__a" href="{{ url_for('pll') }}">PLL алгоритмы</a>
+			<a class="nav__a" href="{{ url_for('shop') }}">Поиск товаров</a>
+		</nav>
+		<div class="content ll">
+			<table class="ll__table">
+				<tbody>
+					<tr><td align="center">
+						<h1>Глаза</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/eyes.png') }}">
+					</td><td><p class="td__p">R2 D' R U2 R' D R U2 R</p></td></tr>
+					<tr><td align="center">
+						<h1>Восьмерка</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/eight.png') }}">
+					</td><td><p class="td__p">R2 D' R U' R' D R U R</p></td></tr>
+					<tr><td align="center">
+						<h1>Рыбка №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/fish1.png') }}">
+					</td><td><p class="td__p">R U R' U R U2 R'</p></td></tr>
+					<tr><td align="center">
+						<h1>Вертолет</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/helikopter.png') }}">
+					</td><td><p class="td__p">R U2 R2 U' R2 U' R2 U2 R</p></td></tr>
+					<tr><td align="center">
+						<h1>Точка №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/dot1.png') }}">
+					</td><td><p class="td__p">R U2 R2 F R F' U2 R' F R F'</p></td></tr>
+					<tr><td align="center">
+						<h1>Запятая №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/comma1.png') }}">
+					</td><td><p class="td__p">Rw' R2 U R' U Rw U2 Rw' U R' Rw</p></td></tr>
+					<tr><td align="center">
+						<h1>Микки Маус №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/mouse1.png') }}">
+					</td><td><p class="td__p">Rw' R U R U R' U' Rw R2 F R F'</p></td></tr>
+					<tr><td align="center">
+						<h1>Буква Н</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/n.png') }}">
+					</td><td><p class="td__p">R U R' U' M' U R U' Rw'</p></td></tr>
+					<tr><td align="center">
+						<h1>Палка №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/stick1.png') }}">
+					</td><td><p class="td__p">F U R U' R' U R U' R' F'</p></td></tr>
+					<tr><td align="center">
+						<h1>Палка №3</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/stick3.png') }}">
+					</td><td><p class="td__p">Rw' U' Rw U' R' U R U' R' U R Rw' U Rw</p></td></tr>
+					<tr><td align="center">
+						<h1>Буква Г №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/g1.png') }}">
+					</td><td><p class="td__p">Rw U Rw' R U R' U' Rw U' Rw'</p></td></tr>
+					<tr><td align="center">
+						<h1>Буква Г №3</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/g3.png') }}">
+					</td><td><p class="td__p">Lw U' R' F' R U R' U' F U x</p></td></tr>
+					<tr><td align="center">
+						<h1>Буква Т №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/t1.png') }}">
+					</td><td><p class="td__p">F R U R' U' F'</p></td></tr>
+					<tr><td align="center">
+						<h1>Скобка №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/bracket1.png') }}">
+					</td><td><p class="td__p">R U R2 U' R' F R U R U' F'</p></td></tr>
+					<tr><td align="center">
+						<h1>Пропеллер №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/propeller1.png') }}">
+					</td><td><p class="td__p">R' F R U R' U' F' U R</p></td></tr>
+					<tr><td align="center">
+						<h1>Стелс №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/stealth1.png') }}">
+					</td><td><p class="td__p">y Fw U R U' R' U R U' R' Fw'</p></td></tr>
+					<tr><td align="center">
+						<h1>Стелс №3</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/stealth3.png') }}">
+					</td><td><p class="td__p">Rw U R' U R U' R' U R U2 Rw'</p></td></tr>
+					<tr><td align="center">
+						<h1>Стелс №5</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/stealth5.png') }}">
+					</td><td><p class="td__p">Rw U' Rw2 U Rw2 U Rw2 U' Rw</p></td></tr>
+					<tr><td align="center">
+						<h1>Квадрат №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/square1.png') }}">
+					</td><td><p class="td__p">Rw U2 R' U' R U' Rw'</p></td></tr>
+					<tr><td align="center">
+						<h1>Рюмка №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/glass1.png') }}">
+					</td><td><p class="td__p">Rw U R' U R U' R' U' Rw' R U R U' R'</p></td></tr>
+					<tr><td align="center">
+						<h1>Молния №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/lightning1.png') }}">
+					</td><td><p class="td__p">Rw U R' U R U2 Rw'</p></td></tr>
+					<tr><td align="center">
+						<h1>Молния №3</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/lightning3.png') }}">
+					</td><td><p class="td__p">y Rw R2 U' R U' R' U2 R U' Rw' R</p></td></tr>
+					<tr><td align="center">
+						<h1>Мягкий знак №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/soft-sign1.png') }}">
+					</td><td><p class="td__p">B' U' R' U R B</p></td></tr>
+					<tr><td align="center">
+						<h1>Мягкий знак №3</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/soft-sign3.png') }}">
+					</td><td><p class="td__p">R' F R U R' U' F2 U F R</p></td></tr>
+					<tr><td align="center">
+						<h1>Буква М №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/m1.png') }}">
+					</td><td><p class="td__p">R U R' U R U' R' U' R' F R F'</p></td></tr>
+					<tr><td align="center">
+						<h1>Галстук №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/tie1.png') }}">
+					</td><td><p class="td__p">y R' U2 Lw R U' R' U Lw' U2 R</p></td></tr>
+					<tr><td align="center">
+						<h1>Петух №1</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/cock1.png') }}">
+					</td><td><p class="td__p">R U' R' U2 R U B U' B' U' R'</p></td></tr>
+					<tr><td align="center">
+						<h1>Петух №3</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/cock3.png') }}">
+					</td><td><p class="td__p">Fw R U R2 U' R' U R2 U' R' Fw'</p></td></tr>
+					<tr><td align="center">
+						<h1>Снежинка</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/snowflake.png') }}">
+					</td><td><p class="td__p">Rw' R U R U R' U' Rw R' M' U R U' Rw'</p></td></tr>
+				</tbody>
+			</table>
+			<table>
+				<tbody>
+					<tr><td align="center">
+						<h1>Уши</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/ears.png') }}">
+					</td><td><p class="td__p">R' F' R U R' U' R' F R U R</p></td></tr>
+					<tr><td align="center">
+						<h1>Двойные глаза</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/double-eyes.png') }}">
+					</td><td><p class="td__p">R U R' U R U' R' U R U2 R'</p></td></tr>
+					<tr><td align="center">
+						<h1>Рыбка №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/fish2.png') }}">
+					</td><td><p class="td__p">L' U' L U' L' U2 L</p></td></tr>
+					<tr><td align="center">
+						<h1>Диагональ</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/diagonal.png') }}">
+					</td><td><p class="td__p">R U R' U R' F R F' U2 R' F R F'</p></td></tr>
+					<tr><td align="center">
+						<h1>Точка №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/dot2.png') }}">
+					</td><td><p class="td__p">F R U R' U' S R U R' U' Fw'</p></td></tr>
+					<tr><td align="center">
+						<h1>Запятая №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/comma2.png') }}">
+					</td><td><p class="td__p">Rw' R U' Rw U2 Rw' U' R U' R2 Rw</p></td></tr>
+					<tr><td align="center">
+						<h1>Микки Маус №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/mouse2.png') }}">
+					</td><td><p class="td__p">Rw U R' U R U2 Rw2 U' R U' R' U2 Rw</p></td></tr>
+					<tr><td align="center">
+						<h1>Летающий змей</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/flying-kite.png') }}">
+					</td><td><p class="td__p">Rw U R' U' Rw' R U R U' R'</p></td></tr>
+					<tr><td align="center">
+						<h1>Палка №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/stick2.png') }}">
+					</td><td><p class="td__p">F R U R' U y' R' U' R U' R'</p></td></tr>
+					<tr><td align="center">
+						<h1>Палка №4</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/stick4.png') }}">
+					</td><td><p class="td__p">R' F R U R U' R2 F' R2 U' R' U R U R'</p></td></tr>
+					<tr><td align="center">
+						<h1>Буква Г №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/g2.png') }}">
+					</td><td><p class="td__p">Lw' U' Lw L' U' L U R' F R</p></td></tr>
+					<tr><td align="center">
+						<h1>Буква Г №4</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/g4.png') }}">
+					</td><td><p class="td__p">Rw' U Rw U Rw' U' Rw B U' B'</p></td></tr>
+					<tr><td align="center">
+						<h1>Буква Т №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/t2.png') }}">
+					</td><td><p class="td__p">R U R' U' R' F R F'</p></td></tr>
+					<tr><td align="center">
+						<h1>Скобка №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/bracket2.png') }}">
+					</td><td><p class="td__p">y R' U' R' F R F' U R</p></td></tr>
+					<tr><td align="center">
+						<h1>Пропеллер №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/propeller2.png') }}">
+					</td><td><p class="td__p">L F' L' U' L U F U' L'</p></td></tr>
+					<tr><td align="center">
+						<h1>Стелс №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/stealth2.png') }}">
+					</td><td><p class="td__p">R' U' Lw' U R U' R' U R U' x' U R</p></td></tr>
+					<tr><td align="center">
+						<h1>Стелс №4</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/stealth4.png') }}">
+					</td><td><p class="td__p">y Rw' U' R U' R' U R U' R' U2 Rw</p></td></tr>
+					<tr><td align="center">
+						<h1>Стелс №6</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/stealth6.png') }}">
+					</td><td><p class="td__p">R U2 R' U' R U' R' F R U R' U' F'</p></td></tr>
+					<tr><td align="center">
+						<h1>Квадрат №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/square2.png') }}">
+					</td><td><p class="td__p">R' F2 Rw U Rw' F R</p></td></tr>
+					<tr><td align="center">
+						<h1>Рюмка №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/glass2.png') }}">
+					</td><td><p class="td__p">R U R' U' R' F R2 U R' U' F'</p></td></tr>
+					<tr><td align="center">
+						<h1>Молния №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/lightning2.png') }}">
+					</td><td><p class="td__p">R U2 R' U2 R' F R F'</p></td></tr>
+					<tr><td align="center">
+						<h1>Молния №4</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/lightning4.png') }}">
+					</td><td><p class="td__p">Rw R' U R U R' U R U2 R' U Rw' R</p></td></tr>
+					<tr><td align="center">
+						<h1>Мягкий знак №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/soft-sign2.png') }}">
+					</td><td><p class="td__p">Fw R U R' U' Fw'</p></td></tr>
+					<tr><td align="center">
+						<h1>Мягкий знак №4</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/soft-sign4.png') }}">
+					</td><td><p class="td__p">R U B' U' R' U R B R'</p></td></tr>
+					<tr><td align="center">
+						<h1>Буква М №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/m2.png') }}">
+					</td><td><p class="td__p">L' U' L U' L' U L U Rw U' Rw' F</p></td></tr>
+					<tr><td align="center">
+						<h1>Галстук №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/tie2.png') }}">
+					</td><td><p class="td__p">F R U' R' U' R U R' F'</p></td></tr>
+					<tr><td align="center">
+						<h1>Петух №2</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/cock2.png') }}">
+					</td><td><p class="td__p">R' U' R U' R' U2 R F R U R' U' F'</p></td></tr>
+					<tr><td align="center">
+						<h1>Петух №4</h1>
+						<img class="table__img" src="{{ url_for('static', filename='images/oll/cock4.png') }}">
+					</td><td><p class="td__p">Rw2 D' Rw U Rw' D Rw2 U' Rw' U' Rw</p></td></tr>
+				</tbody>
+			</table>
+			<a class="up" href="#up">Вверх</a>
+		</div>
+	</main>
+</body>
+</html>

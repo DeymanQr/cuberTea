@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="shortcut icon" href="{{  url_for('static', filename='images/logo.jpg')  }}" type="image/x-icon">
+	<title>Главная | CuberTea</title>
+</head>
+<body>
+	<header>
+		<h1 class="header__h1"><a href="{{ url_for('main') }}">CuberTea</a></h1>
+		<h1 class="header__h1"><a href="{{ url_for('about') }}">Про нас</a></h1>
+		<h1 class="header__h1"><a href="{{ url_for('contacts') }}">Контакты</a></h1>
+		<h1 class="header__h1"><a href="https://www.donationalerts.com/r/deyman_qr" target="_blank">Поддержать нас</a></h1>
+	</header>
+	<main>
+		<nav class="nav">
+			<a class="nav__a" href="{{ url_for('generator') }}">Scramble генератор</a>
+			<a class="nav__a" href="{{ url_for('oll') }}">OLL алгоритмы</a>
+			<a class="nav__a" href="{{ url_for('pll') }}">PLL алгоритмы</a>
+			<a class="nav__a" href="{{ url_for('shop') }}">Поиск товаров</a>
+		</nav>
+		<div class="content text">
+			<h1 class="text__h1">Добро пожаловать на сайт CuberTea!</h1>
+			<p class="main__text__p">Этот сайт создан для спидкуберов и тех, кто хочет ими стать. Кратко о нашем сайте. Сдесь вы можете:</p>
+			<p class="text__p">Сгенерировать скрамблы</p>
+			<p class="text__p">Найти OLL/PLL алгоритмы</p>
+			<p class="text__p">Найти товары из магазина <a class="text__a" href="https://kubik.in.ua/" target="_blank">Kubik in ua</a></p>
+			<h1 class="text__h1">Сайт CuberTea работает с 2020 года</h1>
+			<p class="main__text__p">Если у вас возникли вопросы или появились идеи для улучшения функционала сайта - свяжитесь с нами:</p>
+			<p class="text__p">Telegram: <a class="text__a" href="https://t.me/deyman_qr" target="_blank">Deyman Qr</a></p>
+			<p class="text__p">E-mail: <a class="text__a" href="mailto:deymanqr@gmail.com">deymanqr@gmail.com</a></p>
+			<p class="text__p">Tel: <a class="text__a" href="tel:+380975360480">097 536 04 80</a></p>
+			<h1 class="text__h1">Желаем прияно провести время на нешем сайте!😀</h1>
+		</div>
+	</main>
+</body>
+</html>
